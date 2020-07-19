@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Chamados{% endblock %}
+
+
+{% block content %}
+<div class="list-body">
+    <h1>Lista de chamados</h1>
+    <div class="list-top">
+        <span class="btn-add"><i class="fa fa-plus icon" aria-hidden="true"></i>Novo</span>
+        <input type="text" id="search" name="search" placeholder="Buscar chamado aqui...">
+        <i class="fa fa-search icon" aria-hidden="true"></i>
+    </div>
+
+    <ul class="list">
+        <li>
+            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
+            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
+            <hr>
+        </li>
+        <li>
+            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
+            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
+            <hr>
+        </li>
+        <li>
+            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
+            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
+            <hr>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}

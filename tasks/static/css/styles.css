@@ -1,0 +1,183 @@
+.container {
+    background-color: #9dabb9;
+    padding: 0px;
+    padding-bottom: 1px;
+}
+
+.icon {
+    color: #bdd0e2;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #f5f6fa21;
+    box-shadow: 2px 2px 1px #353b48;
+    border-radius: 4px;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #487eb0;
+}
+
+.nav .nav-header {
+    display: inline;
+}
+
+.nav .nav-header .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #f5f6fa;
+    padding-left: 10px;
+}
+
+.nav .nav-btn {
+    display: none;
+}
+
+.nav .nav-links { 
+    display: flex;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.nav .nav-links::after {
+    content: '';
+    display: inline-block;
+}
+
+.nav .nav-links a {
+    display: inline-block;
+    padding: 8px 10px;
+    color: #f5f6fa;
+}
+
+.nav .nav-links a:hover {
+    background-color: #f5f6fa49;
+    border-radius: 4px;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #f5f6fa49;
+    border-radius: 4px;
+}
+
+.nav #nav-check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav .nav-btn {
+        display: inline-block;
+        position: absolute;
+        color: #f5f6fa;
+        top: 0;
+        right: 0;
+
+    }
+    .nav .nav-btn label {
+        display: inline-block;
+        height: 40px;
+        padding-right: 10px;
+        padding-top: 4px;
+        align-items: center;
+            
+    }
+    .nav i{
+        font-size: 23px;
+    }
+
+    .nav .nav-links {
+        position: absolute;
+        display: block;
+        justify-content: end;
+        width: 100%;
+        background-color: #487eb0af;
+        height: 0px;
+        transition: all 0.3s ease-in-out;
+        overflow-y: hidden;
+        top: 40px;
+        left: 0;
+    }
+    .nav .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav #nav-check:checked + .nav-links {
+        height: 52vh;
+    }
+
+}
+
+/* Formating list page */
+.list-body {
+    padding: 4px;
+}
+
+.list-body h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #487eb0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.list-top {
+    background-image: linear-gradient(#ffffff1c, #487eb0);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.list-top .btn-add {
+    color: #f5f6fa;
+}
+
+.btn-add {
+    background-color: #487eb0;
+    padding: 4px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.btn-add .icon {
+    margin-right: 4px;
+}
+
+/* search bar */
+#search {
+    border-radius: 4px;
+    min-width: 60%;
+    height: 25px;
+}
+
+.list {
+    background-image: linear-gradient(#ffffff1c, #487eb0);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    color: #353b48;
+}
+
+
+/* Footer */
+footer {
+    background-image: linear-gradient(#ffffff1c, #487eb0);
+    color: #353b48;
+    margin: 4px;
+}
+
+footer p {
+
+}
