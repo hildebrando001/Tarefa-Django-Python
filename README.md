@@ -1,0 +1,2 @@
+# sgc
+Attendance management system
