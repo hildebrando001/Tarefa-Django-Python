@@ -13,24 +13,15 @@
     </div>
 
     <ul class="list">
-        <li>
-            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
-            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
-            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
-            <hr>
-        </li>
-        <li>
-            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
-            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
-            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
-            <hr>
-        </li>
-        <li>
-            <span>Cliente</span><span> | data | </span><span>Título da tarefa</span>
-            <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
-            <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
-            <hr>
-        </li>
+        {% for task in tasks %}
+            <li>
+                <span>Cliente</span><span> | {{task.created_at}} | </span><span><a href="task/{{task.id}}">{{task.title}}</a></span>
+                <span><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
+                <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
+                <hr>
+            </li>
+        {% endfor %}
+
     </ul>
 </div>
 
