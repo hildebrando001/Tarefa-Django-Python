@@ -29,7 +29,7 @@
     display: inline;
 }
 
-.nav .nav-header .nav-title {
+.nav .nav-title a {
     display: inline-block;
     font-size: 22px;
     color: #f5f6fa;
