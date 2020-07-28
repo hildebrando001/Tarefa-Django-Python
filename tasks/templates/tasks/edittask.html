@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Editando '{{task.title}}'{% endblock %}
+
+
+{% block content %}
+<div class="list-body">
+    <h1>Editar chamado</h1>
+    <form method="POST">
+        {% csrf_token %} <!--protect the website from cross site request forgery-->
+        {{ form.as_p }}  <!--shows the form as paragrath-->
+        <input type="submit" value="Salvar">
+    </form>    
+
+</div>
+
+{% endblock %}
