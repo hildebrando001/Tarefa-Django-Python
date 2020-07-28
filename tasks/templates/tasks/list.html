@@ -17,7 +17,7 @@
     <ul class="list">
         {% for task in tasks %}
             <li>
-                <span>Cliente</span><span> | {{task.created_at}} | </span><span><a href="task/{{task.id}}">{{task.title}}</a></span>
+                <div class="done">{{task.done}}</div> | <span><a href="task/{{task.id}}">{{task.title}}</a></span>
                 <a href="edit/{{task.id}}"><span><i class="fa fa-pencil icon" aria-hidden="true"></i></span></a>
                 <span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span>
                 <hr>

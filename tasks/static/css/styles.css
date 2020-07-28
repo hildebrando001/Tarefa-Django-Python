@@ -170,6 +170,10 @@
     color: #353b48;
 }
 
+.done {
+    display: inline-block;
+    width: 80px;
+}
 
 /* Footer */
 footer {
