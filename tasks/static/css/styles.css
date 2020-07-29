@@ -170,10 +170,23 @@
     color: #353b48;
 }
 
-.done {
+.list li {
+    display: flex;
+}
+
+.list a {
+    color: #353b48;
+}
+
+.iconlist {
+    
+}
+
+.done {            /*task status in the task list*/
     display: inline-block;
     width: 80px;
 }
+
 
 /* Footer */
 footer {
