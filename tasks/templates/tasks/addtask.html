@@ -8,7 +8,7 @@
     <h1>Novo chamado</h1>
     <form method="POST">
         {% csrf_token %} <!--protect the website from cross site request forgery-->
-        {{ form.as_p }}  <!--shows the form as paragrath-->
+        {{ form.as_p }}  <!--shows the form as paragraph-->
         <input type="submit" value="Salvar">
     </form>    
 
