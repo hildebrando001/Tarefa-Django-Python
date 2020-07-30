@@ -13,7 +13,11 @@
         <input type="text" id="search" name="search" placeholder="Buscar chamado aqui...">
         <i class="fa fa-search icon" aria-hidden="true"></i>
     </div>
-
+    <div class="message" id="message" role="alert">
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    </div>
     <ul class="list">
         {% for task in tasks %}
             <li>
