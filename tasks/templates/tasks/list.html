@@ -21,16 +21,31 @@
     <ul class="list">
         {% for task in tasks %}
             <li>
-                <div class="done">{{task.done}}</div> | <span><a href="task/{{task.id}}">{{task.title}}</a></span>
-                    <div class="iconlist">
-                        <a href="edit/{{task.id}}"><i class="fa fa-pencil icon" aria-hidden="true"></i></a>
-                        <a href="delete/{{task.id}}"><i class="fa fa-trash-o icon" aria-hidden="true"></i></a>
-                    </div>
+                <div class="done">{{task.done}}</div> | 
+                <div class="title"><a href="task/{{task.id}}">{{task.title}}</a></div>
+                <div class="iconlist">
+                    <a href="edit/{{task.id}}"><i class="fa fa-pencil icon" aria-hidden="true"></i></a>
+                    <a href="delete/{{task.id}}"><i class="fa fa-trash-o icon" aria-hidden="true"></i></a>
+                </div>
                     <hr>
             </li>
         {% endfor %}
-
     </ul>
+    <div class="pagination">
+        <span class="step-links">
+            {% if tasks.has_previous %}
+                <a href="?page={{ tasks.previous_page_number }}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            {% endif %}
+
+            <span class="current">
+                {{tasks.number}} de {{ tasks.paginator.num_pages }}
+            </span>
+
+            {% if tasks.has_next %}
+                <a href="?page={{ tasks.next_page_number }}"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            {% endif %}
+        </span>
+    </div>
 </div>
 
 {% endblock %}

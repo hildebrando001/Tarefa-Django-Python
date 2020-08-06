@@ -163,6 +163,9 @@
 }
 
 .list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-image: linear-gradient(#ffffff1c, #487eb0);
     padding-top: 4px;
     padding-bottom: 4px;
@@ -172,6 +175,11 @@
 
 .list li {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    flex-wrap: wrap;
 }
 
 .list a {
@@ -179,7 +187,7 @@
 }
 
 .iconlist {
-    
+
 }
 
 .done {            /*task status in the task list*/
