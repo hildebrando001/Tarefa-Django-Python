@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Entrar no sistema{% endblock %}
+
+{% block content %}
+
+<h4>Entre com seu login</h4>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="hiden" name="next" value="{{ next }}">
+    {{ form.as_p }}
+
+    <button type="submit" class="btn-enviar">Entrar</button>
+</form>
+<p>Clique <a href="/accounts/register">AQUI </a>para criar uma conta</p>
+
+
+{% endblock %}
+

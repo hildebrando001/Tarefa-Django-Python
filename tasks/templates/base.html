@@ -26,10 +26,18 @@
             </div>
             <input type="checkbox" name="" id="nav-check">
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Chamados</a>
+                {% if user.is_authenticated %}
+                <a href="/">Home</a>
+                <a href="/">Chamados</a>
                 <a href="#">Clientes</a>
+                {% else %}
+                    <a href="/accounts/login">Entrar</a>
+                {% endif %}
                 <a href="#">Sobre</a>
+
+                {% if user.is_authenticated %}
+                    <a href="/accounts/logout">Sair</a>
+                {% endif %}
             </div>
         </div>
 

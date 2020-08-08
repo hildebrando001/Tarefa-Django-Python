@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registrar{% endblock %}
+
+{% block content %}
+<div class="box-taskview">
+    <h4>Faça seu registro</h4>
+
+    <form method="POST"> <!-- Não defino action porque o django entende que é pra mesma URL -->
+        {% csrf_token %}
+        <input type="hiden" name="next" value="{{ next }}">
+        {{ form.as_p }} <!-- Form distribuido em parágrafos -->
+
+        <button type="submit" class="btn-enviar">Registrar</button>
+    </form>
+    <p>Já possui uma conta? vá para o <a href="/accounts/login">LOGIN</a></p>
+
+</div>
+{% endblock %}
+
