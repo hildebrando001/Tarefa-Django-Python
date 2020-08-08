@@ -7,10 +7,10 @@
 <div class="box-taskview">
     <h4>Faça seu registro</h4>
 
-    <form method="POST"> <!-- Não defino action porque o django entende que é pra mesma URL -->
+    <form method="POST"> <!-- Its is not necessary to define an action in this case -->
         {% csrf_token %}
         <input type="hiden" name="next" value="{{ next }}">
-        {{ form.as_p }} <!-- Form distribuido em parágrafos -->
+        {{ form.as_p }} <!-- Form as paragraph -->
 
         <button type="submit" class="btn-enviar">Registrar</button>
     </form>
