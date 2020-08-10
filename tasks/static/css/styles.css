@@ -1,5 +1,5 @@
 .container {
-    background-color: #9dabb9;
+    background-color: #9dabb986;
     padding: 0px;
     padding-bottom: 1px;
 }
@@ -33,6 +33,7 @@
 
 .nav .nav-header {
     display: inline;
+    width: 50%;
 }
 
 .nav .nav-title a {
@@ -105,7 +106,7 @@
         display: block;
         justify-content: end;
         width: 100%;
-        background-color: #487eb0af;
+        background-color: #487eb0e1;
         height: 0px;
         transition: all 0.3s ease-in-out;
         overflow-y: hidden;
