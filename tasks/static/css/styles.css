@@ -5,13 +5,16 @@
 }
 
 .logged-user {
-    margin-left: 5px;
-    color: #f5f6fa79;
+    display: flex;
+    position: relative;
+    top: -23px;
+    margin-left: 100px;
+    color: #ffffff71;
     font-size: 0.8rem;
 }
 
 .icon {
-    color: #bdd0e2;
+    color: #ffffff;
     padding: 5px;
     cursor: pointer;
 }
@@ -21,7 +24,6 @@
     box-shadow: 2px 2px 1px #353b48;
     border-radius: 4px;
 }
-
 
 .nav {
     display: flex;
@@ -95,7 +97,6 @@
         padding-right: 10px;
         padding-top: 4px;
         align-items: center;
-            
     }
     .nav i{
         font-size: 23px;
@@ -186,7 +187,14 @@
 }
 
 .title {
+    width: calc(100% - 154px);
     flex-wrap: wrap;
+}
+
+.title:hover {
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .list a {
@@ -194,12 +202,13 @@
 }
 
 .iconlist {
-
+    width: 60px;
 }
 
 .done {            /*task status in the task list*/
     display: inline-block;
     width: 80px;
+    margin-left: 4px;
 }
 
 
