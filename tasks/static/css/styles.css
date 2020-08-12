@@ -9,6 +9,7 @@
     position: relative;
     top: -23px;
     margin-left: 100px;
+    margin-right: 50px;
     color: #ffffff71;
     font-size: 0.8rem;
 }
@@ -35,7 +36,6 @@
 
 .nav .nav-header {
     display: inline;
-    width: 50%;
 }
 
 .nav .nav-title a {
@@ -72,12 +72,6 @@
     border-radius: 4px;
 }
 
-.btn-add:hover {
-    cursor: pointer;
-    background-color: #f5f6fa49;
-    border-radius: 4px;
-}
-
 .nav #nav-check {
     display: none;
 }
@@ -89,17 +83,16 @@
         color: #f5f6fa;
         top: 0;
         right: 0;
+    }
 
+    .nav-btn:hover {
+        cursor: pointer;
+        background-color: #f5f6fa49;
+        border-radius: 4px;
     }
-    .nav .nav-btn label {
-        display: inline-block;
-        height: 40px;
-        padding-right: 10px;
-        padding-top: 4px;
-        align-items: center;
-    }
+
     .nav i{
-        font-size: 23px;
+        font-size: 1.6rem;
     }
 
     .nav .nav-links {
@@ -159,6 +152,12 @@
     border-radius: 4px;
 }
 
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #f5f6fa49;
+    border-radius: 4px;
+}
+
 .btn-add .icon {
     margin-right: 4px;
 }
@@ -186,6 +185,10 @@
     flex-wrap: wrap;
 }
 
+.done {
+    color: rgba(53, 59, 72, 0.548);
+}
+
 .title {
     width: calc(100% - 154px);
     flex-wrap: wrap;
@@ -211,14 +214,38 @@
     margin-left: 4px;
 }
 
+/* Paginator */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.current {
+    color: #487eb0;
+    font-size: 1rem;
+}
+
+.pagination i {
+    color: #f5f6fa;
+    text-shadow: 2px 0px 2px #487eb0, -2px 0px 2px #487eb0;
+}
 
 /* Footer */
 footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
     background-image: linear-gradient(#ffffff1c, #487eb0);
     color: #353b48;
     margin: 4px;
+    height: 25px;
 }
 
 footer p {
-
+    display: flex;
+    position: relative;
+    justify-content: end;
+    margin-right: 4px;
+    color: #ffffff71;
+    font-size: 0.8rem;
 }
