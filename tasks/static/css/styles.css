@@ -7,9 +7,9 @@
 .logged-user {
     display: flex;
     position: relative;
+    width: 150px;
     top: -23px;
     margin-left: 100px;
-    margin-right: 50px;
     color: #ffffff71;
     font-size: 0.8rem;
 }
@@ -141,20 +141,20 @@
     border-radius: 4px;
 }
 
-.list-top .btn-add {
+.list-top .btn-add, .btn-save {
     color: #f5f6fa;
 }
 
-.btn-add {
+.btn-add, .btn-save {
     background-color: #487eb0;
     padding: 4px;
     margin-right: 10px;
     border-radius: 4px;
 }
 
-.btn-add:hover {
+.btn-add:hover, .btn-save:hover {
     cursor: pointer;
-    background-color: #f5f6fa49;
+    background-color: rgba(72, 126, 176, 0.39);
     border-radius: 4px;
 }
 

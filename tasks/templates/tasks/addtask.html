@@ -5,11 +5,11 @@
 
 {% block content %}
 <div class="list-body">
-    <h1>Novo chamado</h1>
+    <h1>Nova tarefa</h1>
     <form method="POST">
         {% csrf_token %} <!--protect the website from cross site request forgery-->
         {{ form.as_p }}  <!--shows the form as paragraph-->
-        <input type="submit" value="Salvar">
+        <input class="btn-save" type="submit" value="Salvar">
     </form>    
 
 </div>
