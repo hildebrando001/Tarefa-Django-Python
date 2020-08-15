@@ -9,7 +9,7 @@
     <form method="POST">
         {% csrf_token %} <!--protect the website from cross site request forgery-->
         {{ form.as_p }}  <!--shows the form as paragrath-->
-        <input type="submit" value="Salvar">
+        <input class="btn-save" type="submit" value="Salvar">
     </form>    
 
 </div>

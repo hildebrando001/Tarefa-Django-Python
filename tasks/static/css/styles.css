@@ -266,6 +266,7 @@ footer p {
     padding-bottom: 4px;
     border-radius: 4px;
     color: #353b48;
+    box-shadow: 2px 2px 2px #353b48;
 }
 
 h4 {
@@ -313,12 +314,13 @@ h4 {
 }
 
 .reg-card {
-    width: 650px;
-    height: 380px;
+    width: 450px;
+    height: 440px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
     background-image: linear-gradient(#ffffff1c, #487eb0);
+    box-shadow: 2px 2px 2px #353b48;
 }
 
 .reg-card span, li, p {
@@ -330,4 +332,5 @@ h4 {
 .div-btn-reg {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
