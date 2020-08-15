@@ -1,8 +1,3 @@
-$(document).ready(function () {
-    console.log('funcionou...')
-});
-
-
 $(document).ready(function(){
 
     var deleteBtn  = $('.delete-btn');
