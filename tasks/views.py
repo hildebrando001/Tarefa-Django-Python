@@ -69,3 +69,5 @@ def deleteTask(request, id):
     return redirect('/')
 
 
+def about(request):
+    return render(request, "about.html")

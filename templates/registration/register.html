@@ -4,18 +4,20 @@
 {% block title %}Registrar{% endblock %}
 
 {% block content %}
-<div class="box-taskview">
-    <h4>Faça seu registro</h4>
 
-    <form method="POST"> <!-- Its is not necessary to define an action in this case -->
-        {% csrf_token %}
-        <input type="hiden" name="next" value="{{ next }}">
-        {{ form.as_p }} <!-- Form as paragraph -->
-
-        <button type="submit" class="btn-enviar">Registrar</button>
-    </form>
-    <p>Já possui uma conta? vá para o <a href="/accounts/login">LOGIN</a></p>
-
+<div class="box-reg">
+    <div class="reg-card">
+        <h4>Faça seu registro</h4>
+        <form method="POST"> <!-- Its is not necessary to define an action in this case -->
+            {% csrf_token %}
+            <input class="store-velue" type="hiden" name="next" value="{{ next }}">
+            {{ form.as_p }} <!-- Form as paragraph -->
+            <div class="div-btn-reg">
+                <button type="submit" class="btn-reg">Registrar</button>
+            </div>
+        </form>
+        <p>Já possui uma conta? vá para o <a href="/accounts/login">LOGIN</a></p>
+    </div>
 </div>
 {% endblock %}
 
