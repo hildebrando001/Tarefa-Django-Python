@@ -1,4 +1,4 @@
-# sgc
+# AppTarefa
 App for tasks management.
 
 Python 3.8.2 and 
